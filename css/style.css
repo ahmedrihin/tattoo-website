@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;;
+}
+
+:root{
+    --dark-gray: #212121;
+    --paste: #0d7377;
+    --white: #fff;
+    --dark: #000;
+}
+
+.container{
+    width: 1152px;
+    margin: auto;
+}
+section{
+    padding: 5rem 0;
+}
+
+/* Header Design */
+
+.header{
+    padding: 1.5rem 0;
+    background-color: var(--dark-gray);
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-wrapper .logo a{
+    text-decoration: none;
+}
+.header-wrapper .logo a h2{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
+    color: var(--white);
+}
+.header-wrapper .navigation ul{
+    display: flex;
+}
+.header-wrapper .navigation ul li{
+    list-style: none;
+    margin-right: 1rem;
+}
+.header-wrapper .navigation ul li:last-child{
+    margin-right: 0;
+}
+.header-wrapper .navigation ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease;
+}
+.header-wrapper .navigation ul li a:hover{
+    background-color: var(--paste);
+    border-radius: 10px;
+}
+.header-wrapper .navigation ul li a.active{
+    background-color: var(--paste);
+    border-radius: 10px;
+}
+
+/* Slider Section */
+.slider{
+    color: var(--white);
+    background-color: var(--dark-gray);
+}
+
+.slider-content-wrapper{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-content-wrapper .slider-content-left{
+    padding-right: 5rem;
+}
+.slider-content-wrapper .slider-content-left h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.slider-content-wrapper .slider-content-left p{
+    margin-bottom: 2rem;
+}
+.slider-content-wrapper .slider-content-left button{
+    font-size: 1rem;
+    padding: 0.7rem 2.5rem;
+    background-color: var(--paste);
+    border: none;
+    outline: none;
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.slider-content-wrapper .slider-content-left button:hover{
+    background-color: #053032;
+}
+.slider-content-wrapper .slider-content-right img{
+    height: 450px;
+}
+ul.dots {
+    list-style: none;
+    display: flex;
+}
+ul.dots li{
+    margin-right: 0.8rem;
+}
+ul.dots li button{
+    font-size: 0px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+ul.dots li.slick-active button{
+    height: 20px;
+    width: 20px;
+    background-color: var(--paste);
+}
+
+/* About Section */
+
+.about h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.tattoo-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5rem;
+    margin-bottom: 8rem;
+}
+.tattoo-wrapper .tattoo-card {
+    text-align: center;
+}
+.tattoo-wrapper .tattoo-card img{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+.tattoo-wrapper .tattoo-card .tattoo-content h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-wrapper .left-img{
+    padding-right: 5rem;
+}
+.about-wrapper .left-img img{
+    height: 450px;
+}
+.about-wrapper .right-content h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.about-wrapper .right-content p{
+    margin-bottom: 2rem;
+}
+.about-wrapper .right-content button{
+    font-size: 1rem;
+    padding: 0.7rem 2.5rem;
+    background-color: var(--paste);
+    border: none;
+    outline: none;
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.about-wrapper .right-content button:hover{
+    background-color: #053032;
+}
+
+/* Gallery Section */
+
+.gallery h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.gallery .photo-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: auto;
+    justify-content: center;
+}
+.photo-gallery img {
+    height: 420px;
+    object-fit: cover;
+}
+.photo-gallery .image-box{
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-gallery .image-box .title h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+.photo-gallery .image-box .title{
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: var(--white);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+.photo-gallery .image-box .title::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 33, 33, 0.8);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.photo-gallery .image-box:hover .title{
+    top: 0;
+}
+
+/* Client Section */
+
+.client h1{
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 2rem;
+}
+/* .client-slider{
+    display: flex;
+} */
+.client-wrapper .client-review{
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 2rem;
+    position: relative;
+    margin-bottom: 4rem;
+    /* width: 50%; */
+}
+.client-wrapper:first-child{
+    margin-right: 1rem;
+}
+.client-wrapper .client-review::after{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: var(--dark-gray);
+    top: 100%;
+    left: 0;
+    transform: rotate(45deg);
+    margin-top: -25px;
+    margin-left: 25px;
+}
+.client-wrapper .clients img{
+    height: 80px;
+    margin-right: 1rem;
+}
+.client-wrapper .clients{
+    display: flex;
+    align-items: center;
+}
+.client-wrapper .clients h6{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
