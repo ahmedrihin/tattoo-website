@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
 
     <!-- Main Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -40,82 +43,117 @@
     <!-- Header -->
 
     <header class="header">
-        <div class="container">
-            <div class="header-wrapper">
-                <div class="logo">
-                    <a href="index.html">
-                        <h2>Scarvve</h2>
+        <nav>
+            <div class="container">
+
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <h2>Scarvve</h2>
+                        </a>
+                    </div>
+                    <div class="navigation">
+                        <ul id="nav">
+                            <li class="current"><a href="#" class="active">Home</a></li>
+                            <li><a href="#about-sticky-menu">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Mobile Hamburger -->
+
+            <div class="hamburger">
+                <span onclick="openNav()">&#9776;</span>
+
+                <div class="hamburger-overlay" id="hamburger-overlay">
+                    <a href="javascript:void()" onclick="closeNav()" class="close">
+                        <i class="fas fa-times close"></i>
                     </a>
-                </div>
-                <div class="navigation">
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                    </ul>
+                    <div class="navigation-overlay" id="navigation-overlay">
+                        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+                        <a href="#" class="active" onclick="closeNav()">Home</a>
+
+                        <a href="#" onclick="closeNav()">About</a>
+
+                        <a href="#" onclick="closeNav()">Services</a>
+
+                        <a href="#" onclick="closeNav()">Gallery</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
+
+
+
+        <!-- Slider Section -->
+
+        <section class="slider">
+            <div class="container">
+                <div class="main-slider">
+                    <div class="slider-content-wrapper">
+                        <div class="slider-content-left">
+                            <h1>Best Tattoos</h1>
+                            <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse
+                                dicta
+                                aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto
+                                veritatis
+                                delectus repellat modi impedit sequi.</p>
+                            <button type="menu">Read More</button>
+                        </div>
+
+                        <div class="slider-content-right">
+                            <img src="images/slider-img.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="slider-content-wrapper">
+                        <div class="slider-content-left">
+                            <h1>Best Tattoos</h1>
+                            <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse
+                                dicta
+                                aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto
+                                veritatis
+                                delectus repellat modi impedit sequi.</p>
+                            <button type="menu">Read More</button>
+                        </div>
+
+                        <div class="slider-content-right">
+                            <img src="images/slider-img.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="slider-content-wrapper">
+                        <div class="slider-content-left">
+                            <h1>Best Tattoos</h1>
+                            <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse
+                                dicta
+                                aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto
+                                veritatis
+                                delectus repellat modi impedit sequi.</p>
+                            <button type="menu">Read More</button>
+                        </div>
+
+                        <div class="slider-content-right">
+                            <img src="images/slider-img.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
-
-    <!-- Slider Section -->
-
-    <section class="slider">
-        <div class="container">
-            <div class="main-slider">
-                <div class="slider-content-wrapper">
-                    <div class="slider-content-left">
-                        <h1>Best Tattoos</h1>
-                        <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta
-                            aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis
-                            delectus repellat modi impedit sequi.</p>
-                        <button type="menu">Read More</button>
-                    </div>
-
-                    <div class="slider-content-right">
-                        <img src="images/slider-img.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="slider-content-wrapper">
-                    <div class="slider-content-left">
-                        <h1>Best Tattoos</h1>
-                        <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta
-                            aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis
-                            delectus repellat modi impedit sequi.</p>
-                        <button type="menu">Read More</button>
-                    </div>
-
-                    <div class="slider-content-right">
-                        <img src="images/slider-img.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="slider-content-wrapper">
-                    <div class="slider-content-left">
-                        <h1>Best Tattoos</h1>
-                        <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta
-                            aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis
-                            delectus repellat modi impedit sequi.</p>
-                        <button type="menu">Read More</button>
-                    </div>
-
-                    <div class="slider-content-right">
-                        <img src="images/slider-img.png" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
 
-    <section class="about">
+    <section class="about" id="about-sticky-menu">
         <h1>What We Do</h1>
         <div class="container">
             <div class="tattoo-wrapper">
@@ -172,7 +210,7 @@
 
     <!-- Photo Gallery -->
 
-    <section class="gallery">
+    <section class="gallery" id="services">
         <h1>Our Tattoo Gallery</h1>
 
         <div class="photo-gallery">
@@ -228,8 +266,66 @@
     <section class="client">
         <div class="container">
             <h1>What Says Our Client</h1>
-            <div class="client-slider">
+            <div class="client-slider owl-carousel owl-theme">
 
+                <div class="client-wrapper">
+                    <div class="client-review">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore atque veniam, dolorem
+                            magnam
+                            quisquam illum accusantium illo libero perspiciatis quam.</p>
+                    </div>
+                    <div class="clients">
+                        <img src="images/client1.jpg" alt="">
+                        <div>
+                            <h6>Alina Camp</h6>
+                            <p>Magna</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-wrapper">
+                    <div class="client-review">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore atque veniam, dolorem
+                            magnam
+                            quisquam illum accusantium illo libero perspiciatis quam.</p>
+                    </div>
+                    <div class="clients">
+                        <img src="images/client2.jpg" alt="">
+                        <div>
+                            <h6>Alina Camp</h6>
+                            <p>Magna</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-wrapper">
+                    <div class="client-review">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore atque veniam, dolorem
+                            magnam
+                            quisquam illum accusantium illo libero perspiciatis quam.</p>
+                    </div>
+                    <div class="clients">
+                        <img src="images/client1.jpg" alt="">
+                        <div>
+                            <h6>Alina Camp</h6>
+                            <p>Magna</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-wrapper">
+                    <div class="client-review">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore atque veniam, dolorem
+                            magnam
+                            quisquam illum accusantium illo libero perspiciatis quam.</p>
+                    </div>
+                    <div class="clients">
+                        <img src="images/client2.jpg" alt="">
+                        <div>
+                            <h6>Alina Camp</h6>
+                            <p>Magna</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="client-wrapper">
                     <div class="client-review">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore atque veniam, dolorem
@@ -263,10 +359,116 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
+
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="links-wrapper">
+                    <div class="links">
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                        <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
+
+                    <div class="social-link">
+                        <div>
+                            <a href="#">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer-content-wrapper">
+                    <div class="footer-about">
+                        <h2>About</h2>
+                        <p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+                            normal distribution of letters, as opposed to</p>
+                    </div>
+
+                    <div class="instagram">
+                        <h2>Instagram</h2>
+                        <div class="insta-wrapper">
+                            <div class="insta-pic">
+                                <img src="images/g3 (1).jpg" alt="">
+                            </div>
+                            <div class="insta-caption">
+                                <p>long established fact that a reader</p>
+                            </div>
+                        </div>
+
+                        <div class="insta-wrapper">
+                            <div class="insta-pic">
+                                <img src="images/g4 (1).jpg" alt="">
+                            </div>
+                            <div class="insta-caption">
+                                <p>long established fact that a reader</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-us">
+                        <h2>Contact Us</h2>
+
+                        <div>
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Location</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="tel:01316903010">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Call +8801316903010</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="mailto:ahmedrihin@gmail.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>ahmedrihin@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1824.8500031729714!2d90.37054718599543!3d23.829264466924126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1341c43b403%3A0x6c089e6c906a40e6!2sCeramic%20Gate%20Water%20Tank!5e0!3m2!1sen!2sbd!4v1626291546862!5m2!1sen!2sbd"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2021 All Rights Reserved By Free Html Templates</p>
+        </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
 
     <script src="js/main.js"></script>
 </body>
